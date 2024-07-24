@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="icon" href="./image/img1.png">
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+
+  </head>
+
+  <body class="bg-black">
+    <nav>
+      <div class="fixed z-50 w-[250px] h-screen">
+         <div class="navbar h-full relative">
+          <div class="navbody h-full grid content-between bg-black text-white px-5 py-8">
+            <div class="navList">
+              <ul class="overflow-hidden">
+                <li class="py-3 relative transition-all duration-75" onclick=" search()" ><a class="" href="#">Search</a></li>
+                <li class="py-3 relative transition-all duration-75" onclick="getCategory()"><a class="" href="#">Categories</a></li>
+                <li class="py-3 relative transition-all duration-75" onclick="getArea()"><a class="" href="#">Area</a></li>
+                <li class="py-3 relative transition-all duration-75" onclick="getAllIngredients()"><a class="" href="#">Ingredients</a></li>
+                <li class="py-3 relative transition-all duration-75" onclick="contactUs()"><a class="" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navFooter">
+              <div class="navicon">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-solid fa-globe"></i></a>
+                <p>Copyright Â© 2019 All Rights
+                  Reserved.</p>
+              </div>
+            </div>
+          </div>
+          <div class="sidenav absolute h-full w-[60px] bg-white text-black top-0 text-center grid content-between py-8">
+            <img src="../image/img1.png" alt="" class="w-full">
+            <div class="">
+              <i class="fa-solid fa-bars  text-[35px] cursor-pointer" onclick="openNavbar()"></i>
+              <i class="fa-solid fa-xmark  text-[35px] cursor-pointer" onclick="closeNavbar()"></i>
+            </div>
+            <div class="">
+              <a href="" class="block"><i class="fa-solid fa-globe"></i></a>
+              <a href=""><i class="fa-solid fa-share-nodes hidden"></i></a>
+            </div>
+
+          </div>
+
+         </div>
+      </div>
+
+    </nav>
+
+    <div id="loading" class="h-screen flex items-center justify-center">
+      <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+   
+    <div id="container" class="container text-white py-10 px-20 lg:px-40 ">
+      <div id="gridsystem" class="grid gap-5 grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+        
+      </div>
+    </div>
+
+
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
